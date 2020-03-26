@@ -63,7 +63,7 @@ main {
 
 /* SECTION */
 .posts {
-  width: 825px;
+  max-width: 825px;
   margin: 0 auto;
 }
 
@@ -127,3 +127,20 @@ footer {
   /* height: 50px; */
 }
 
+@media screen and (max-width: 930px) {
+  .posts__main-area half-column {
+      flex-direction: column;  
+      display: flex;
+      width: 100%;
+  }
+
+  .half-column {
+      display: inline;
+      text-align: center;
+  }
+
+  .posts__main-area img {
+      justify-content: space-around;
+      width: 100%;
+  }
+}
